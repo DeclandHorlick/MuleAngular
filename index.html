@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="emailApp">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-cookies.min.js"></script>
+    <!-- <script src="scripts/angular.min.js"></script> -->
+    <script src="scripts/ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app-state-manager.js"></script>
+    
+    <script src="app/service/loginService.js"></script>
+    <script src="app/service/dal/dal.js"></script>
+    <script src="app/service/dal/login.js"></script>
+    
+    <script src="app/feature/login/login-controller.js"></script>
+	<script src="app/feature/home/dashboard-controller.js"></script>
+	
+<title>QAMail</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a ui-sref="login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+			<div class="col-sm-2 sidenav"></div>
+				<div class="col-sm-8 text-left">
+					<div ui-view>
+						
+					</div>
+				</div>
+			<div class="col-sm-2 sidenav">
+				<div class="well"></div>
+				<div class="well"></div>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid text-center"> </footer>
+</body>
+</html>

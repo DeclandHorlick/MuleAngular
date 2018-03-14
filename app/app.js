@@ -1,0 +1,1 @@
+var emailApp = angular.module('emailApp',['ui.router','ngCookies']);

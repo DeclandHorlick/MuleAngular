@@ -1,0 +1,14 @@
+<div class="panel panel-default" ng-controller="loginController as logControl">
+	<div class="panel-heading">Login form</div>
+	<div class="panell-body">
+		<form name="loginForm"method="post">
+			<label for="username">Username:</label>
+			<input type="text" name="username" ng-model="logControl.username"/>
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" name="password" ng-model="logControl.password"/>
+			<br>
+			<button ng-click="logControl.login()">Login</button>
+		</form>
+	</div>
+</div>
